@@ -1,0 +1,136 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Systems.JulianaCloud.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Systems.JulianaCloud.Resources": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Systems.JulianaCloud.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Systems.JulianaCloud.Domain.dll": {}
+        }
+      },
+      "Systems.JulianaCloud.Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Systems.JulianaCloud.Resources.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Systems.JulianaCloud.Resources.dll": {}
+        }
+      },
+      "Systems.JulianaCloud.TransferObjects/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Systems.JulianaCloud.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Systems.JulianaCloud.TransferObjects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Systems.JulianaCloud.TransferObjects.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Systems.JulianaCloud.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Systems.JulianaCloud.Domain/Systems.JulianaCloud.Domain.csproj",
+      "msbuildProject": "../Systems.JulianaCloud.Domain/Systems.JulianaCloud.Domain.csproj"
+    },
+    "Systems.JulianaCloud.Resources/1.0.0": {
+      "type": "project",
+      "path": "../Systems.JulianaCloud.Resources/Systems.JulianaCloud.Resources.csproj",
+      "msbuildProject": "../Systems.JulianaCloud.Resources/Systems.JulianaCloud.Resources.csproj"
+    },
+    "Systems.JulianaCloud.TransferObjects/1.0.0": {
+      "type": "project",
+      "path": "../Systems.JulianaCloud.TransferObjects/Systems.JulianaCloud.TransferObjects.csproj",
+      "msbuildProject": "../Systems.JulianaCloud.TransferObjects/Systems.JulianaCloud.TransferObjects.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Systems.JulianaCloud.Domain >= 1.0.0",
+      "Systems.JulianaCloud.TransferObjects >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj",
+      "projectName": "Systems.JulianaCloud.Interfaces",
+      "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\",
+      "outputPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Carlos Epieyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Domain\\Systems.JulianaCloud.Domain.csproj": {
+              "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Domain\\Systems.JulianaCloud.Domain.csproj"
+            },
+            "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.TransferObjects\\Systems.JulianaCloud.TransferObjects.csproj": {
+              "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.TransferObjects\\Systems.JulianaCloud.TransferObjects.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
