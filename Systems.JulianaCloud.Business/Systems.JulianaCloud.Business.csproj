@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Systems.JulianaCloud.Business</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="LinqKit" Version="1.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.19.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Systems.JulianaCloud.Commons\Systems.JulianaCloud.Commons.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.Domain\Systems.JulianaCloud.Domain.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.Interfaces\Systems.JulianaCloud.Interfaces.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.Resources\Systems.JulianaCloud.Resources.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.TransferObjects\Systems.JulianaCloud.TransferObjects.csproj" />
+  </ItemGroup>
+
+</Project>
