@@ -1,0 +1,5 @@
+/.vs
+*/obj
+*/bin
+/Scripts/*.jfm
+/Scripts/Scripts.dbmdl

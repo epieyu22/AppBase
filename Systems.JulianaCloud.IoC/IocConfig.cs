@@ -10,21 +10,12 @@ using Systems.JulianaCloud.Business.Crud;
 using Systems.JulianaCloud.TransferObjects.Lambda;
 using Systems.JulianaCloud.Interfaces.Business.Utilities.Lambda;
 using Systems.JulianaCloud.Business.Utilities.Lambda;
+using Systems.JulianaCloud.Interfaces.Business.Utilities.Domain;
+using Systems.JulianaCloud.Business.Utilities.Domain;
+using Systems.JulianaCloud.Business.Utilities.Domain.Pipes;
 using System.Collections.Generic;
 using Systems.JulianaCloud.Interfaces.Business.Authentication;
 using Systems.JulianaCloud.Business.Authentication;
-using Systems.JulianaCloud.Business.Utilities.Identity;
-using Systems.JulianaCloud.Interfaces.Business.Utilities.Identity;
-using Systems.JulianaCloud.Business.Novelties.Reporting;
-using Systems.JulianaCloud.Interfaces.Business.Novelties.Reporting;
-using Systems.JulianaCloud.Business.Pipelines.Domain.Pipes;
-using Systems.JulianaCloud.Business.Pipelines.Shared;
-using Systems.JulianaCloud.Interfaces.Business.Pipelines.Shared.Pipes;
-using Systems.JulianaCloud.Interfaces.Business.Pipelines.Shared;
-using Systems.JulianaCloud.Interfaces.Business.Novelties;
-using Systems.JulianaCloud.Business.Novelties;
-using Systems.JulianaCloud.Interfaces.Business.Employee;
-using Systems.JulianaCloud.Business.Employee;
 
 namespace Systems.JulianaCloud.Bootstraper
 {
@@ -39,14 +30,7 @@ namespace Systems.JulianaCloud.Bootstraper
             services.AddScoped(typeof(IAuthService), typeof(AuthService));
             services.AddScoped(typeof(ISecurityService), typeof(SecurityService));
             services.AddScoped(typeof(IBasicCrudService<,,>), typeof(BasicCrudService<,,>));
-            services.AddScoped<INoveltiesReportService, NoveltiesReportService>();
-            services.AddScoped<INoveltiesReportFiltersBuilder, NoveltiesReportFiltersBuilder>();
-            services.AddScoped<INoveltyMasterService, NoveltyMasterService>();
-            services.AddScoped<IEmployeeMasterService, EmployeeMasterService>();
-            
             services.AddScoped<ICityService, CityService>();
-            services.AddScoped<IDigitVerificationService, DigitVerificationService>();
-            services.AddScoped<ITotalEmployeesService, TotalEmployeesService>();
             services.AddScoped<IMapper>((IServiceProvider provider) => mapper);
             services.AddScoped<ILambdaBuilder, LambdaBuilder>();
 

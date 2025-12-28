@@ -7,7 +7,7 @@ using System.Reflection;
 using Systems.JulianaCloud.Business.Utilities.Types;
 using Systems.JulianaCloud.Domain.Interfaces;
 using Systems.JulianaCloud.Interfaces.Business.Crud;
-using Systems.JulianaCloud.Interfaces.Business.Pipelines.Shared;
+using Systems.JulianaCloud.Interfaces.Business.Utilities.Domain;
 using Systems.JulianaCloud.Interfaces.Business.Utilities.Lambda;
 using Systems.JulianaCloud.Interfaces.Data;
 using Systems.JulianaCloud.Resources;

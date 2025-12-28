@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Systems.JulianaCloud.TransferObjects")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d1c5872ea0f3404e91dd7693feaeaa6d6202306")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17827a1ac63abd4afc7457580dc897bc9a2448fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Systems.JulianaCloud.TransferObjects")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Systems.JulianaCloud.TransferObjects")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,155 @@
+<div class="container-fluid">
+  <div class="form-arl">
+    
+    <jc-error-summary [form]="form"></jc-error-summary>
+
+      <form [formGroup]="form"> 
+          <div class="card-full">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-2" >
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.CODE' | translate}}</label>
+                      <input formControlName="key" 
+                             type="number"
+                             class="form-control"
+                             readonly>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.NAME' | translate}}</label>
+                      <input formControlName="name" 
+                             type="text" 
+                             class="form-control text-uppercase"
+                             maxlength="30">
+                      <span class="form-text text-danger"
+                          *ngIf="fieldRequired('name')">
+                             El campo nombre  es obligatorio
+                      </span>
+     
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.NUMDOC' | translate}}</label>
+                      <input formControlName="numDoc"
+                             type="number" 
+                             class="form-control"
+                             onkeypress="if (this.value.length > 8) return false;">
+                      <span class="form-text text-danger"
+                        *ngIf="fieldRequired('numDoc')">
+                          El campo número documento es obligatorio
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.DVER' | translate}}</label>
+                      <input formControlName="dVer" 
+                             type="number" 
+                             class="form-control"
+                             min="0"
+                             max="9"
+                             onkeypress="if (this.value.length > 0) return false;">
+                      <span class="form-text text-danger"
+                        *ngIf="fieldRequired('dVer')">
+                          El campo Dv es obligatorio
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.ADDRESS' | translate}}</label>
+                      <input formControlName="address" 
+                             type="text" 
+                             class="form-control"
+                             maxlength="40">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.TEL' | translate}}</label>
+                      <input formControlName="tel1" 
+                             type="number" 
+                             class="form-control" 
+                             onkeypress="if (this.value.length > 9) return false;">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.TELDOS' | translate}}</label>
+                      <input formControlName="tel2" 
+                             type="number" 
+                             class="form-control"
+                             onkeypress="if (this.value.length > 0) return false;">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.CONTACT' | translate}}</label>
+                      <input formControlName="contac" 
+                             type="text" 
+                             class="form-control"
+                             maxlength="30">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.FAX' | translate}}</label>
+                      <input formControlName="fax" 
+                             type="number" 
+                             class="form-control"
+                             onkeypress="if (this.value.length > 0) return false;">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.TOTAL' | translate}}</label>
+                      <input formControlName="total" 
+                             type="number" 
+                             class="form-control"
+                             readonly>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.ARL.CODSUPER' | translate}}</label>
+                      <input formControlName="codSuper" 
+                             type="text" 
+                             class="form-control"
+                             maxlength="6">
+                      <span class="form-text text-danger"
+                          *ngIf="fieldRequired('codSuper')">
+                          El campo codigo super es obligatorio
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                  <button type="submit" (click)="saveChanges()" class="btn btn-icon btn-primary">
+                      <span class="btn-inner--icon">
+                          <i class="las la-plus-circle"></i>
+                      </span>
+                      {{ 'BUTTONS.SAVE' | translate}}
+                  </button>
+              </div>
+          </div>
+        </form>
+      <br>
+  </div>
+</div>

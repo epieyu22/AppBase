@@ -1,0 +1,77 @@
+<div class="container-fluid">
+    <br>
+    <div class="card-full">
+        <div class="card-header" style="background-color: rgb(245, 251, 251); border: 0ch;">
+            <h4 style="font-size: x-large;color: rgb(146, 141, 141)">{{ 'SETTINGS.WITHDRAWALS.TITLE' | translate }}</h4>
+        </div>
+        <div class="card-body">
+            
+            <jc-pdf-export-button [grid]="grid"></jc-pdf-export-button>
+
+            <dx-data-grid #grid
+                (onContentReady)="onContentReady($event)"
+                [dataSource]="withdrawalStore"
+                [columnHidingEnabled]="true"
+                [allowColumnReordering]="true"
+                [hoverStateEnabled]="true"
+                showBorders = "true"
+                (onToolbarPreparing)="prepareToolbar($event)"
+                >
+                <dxo-export [enabled]="true"></dxo-export>
+                <dxo-filter-row 
+                    [visible]="true" ></dxo-filter-row>
+                <dxo-header-filter 
+                    [visible]="true"></dxo-header-filter>
+                <dxo-paging [pageSize]="10"></dxo-paging>
+                <dxo-pager
+                    [showPageSizeSelector]="true"
+                    [allowedPageSizes]="[10, 25]"
+                ></dxo-pager>
+                <dxo-search-panel
+                    [visible]="true"
+                    [highlightCaseSensitive]="true"
+                ></dxo-search-panel>    
+                <dxo-group-panel
+                    [visible]="true"
+                ></dxo-group-panel>
+                <dxo-grouping
+                    [autoExpandAll]="false"
+                ></dxo-grouping>
+
+
+                <dxi-column type="buttons">
+                    <dxi-button name="edit" icon="las la-edit"  [onClick]='loadItem.bind(this)'>
+                    </dxi-button>
+                    <dxi-button name="delete" icon="las la-trash" [onClick]='deleteEntry.bind(this)'></dxi-button>
+                </dxi-column>
+
+
+                <dxi-column dataField="key" [width] = "90" aligment = "left" caption="{{ 'SETTINGS.WITHDRAWALS.CODE' | translate }}"></dxi-column>
+                <dxi-column dataField="name" [width] = "1000" caption="{{ 'SETTINGS.WITHDRAWALS.NAME' | translate }}" ></dxi-column>
+
+                <dxo-editing 
+                    mode="popup"
+                    [allowUpdating]="true"
+                    [allowDeleting]="true"
+                    [allowAdding]="true"
+                    [useIcons]="true">
+
+                </dxo-editing>
+
+            </dx-data-grid>
+        </div>
+
+
+        <dx-popup 
+            [showTitle]="true"
+            title="{{ 'SETTINGS.WITHDRAWALS.TITLE' | translate }}"
+            [dragEnabled]="false"
+            [closeOnOutsideClick]="true"
+            [(visible)]="popupVisible">
+          <withdrawals-form #form [model]="currentModel" (formSubmitted)="formSubmittedHandler($event)"></withdrawals-form>
+        </dx-popup>
+        
+    </div>
+
+
+</div>

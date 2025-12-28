@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Domain\**" />
+    <Compile Remove="TransferObjects\**" />
+    <EmbeddedResource Remove="Domain\**" />
+    <EmbeddedResource Remove="TransferObjects\**" />
+    <None Remove="Domain\**" />
+    <None Remove="TransferObjects\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Systems.JulianaCloud.Domain\Systems.JulianaCloud.Domain.csproj" />
     <ProjectReference Include="..\Systems.JulianaCloud.TransferObjects\Systems.JulianaCloud.TransferObjects.csproj" />
   </ItemGroup>

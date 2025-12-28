@@ -1,0 +1,99 @@
+<div class="container-fluid">
+    <div class="card-full">
+        <div class="card-header" style="background-color:rgb(245, 251, 251); border: 0ch;height: 2cm;">
+            <h4 style="font-size: large;color: rgb(146, 141, 141);">{{ 'SETTINGS.POSITIONS.TITLE' | translate }}</h4>
+            <hr style="border-color: blck;">
+        </div>
+
+        <div class="card-body">
+            <jc-pdf-export-button [grid]="grid"></jc-pdf-export-button>
+                <dx-data-grid #grid
+                    (onContentReady)="onContentReady($event)"
+                    [dataSource]="employeePositionStore"
+                    [columnHidingEnabled]="true"
+                    [allowColumnReordering]="true"
+                    [hoverStateEnabled]="true"
+                    [showBorders]="true"
+                    (onToolbarPreparing)="prepareToolbar($event)"
+                >
+                <dxo-export [enabled]="true"></dxo-export>
+                <dxo-filter-row [visible]="true"></dxo-filter-row>
+                <dxo-header-filter [visible]="true"></dxo-header-filter>
+                <dxo-paging [pageSize]="10"></dxo-paging>
+                <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[10, 25]"></dxo-pager>
+                <dxo-search-panel [visible]="true" [highlightCaseSensitive]="true"></dxo-search-panel>
+                <dxo-group-panel [visible]="true"></dxo-group-panel>
+                <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+
+
+                <dxi-column type="buttons">
+                    <dxi-button name="edit" icon="las la-edit"  [onClick]='loadItem.bind(this)'>
+                    </dxi-button>
+                    <dxi-button name="delete" icon="las la-trash" [onClick]='deletePosition.bind(this)'></dxi-button>
+                </dxi-column>
+
+                <dxi-column dataField="code" [width]="90" alignment="left" caption="{{ 'SETTINGS.POSITIONS.CODE' | translate }}"></dxi-column>
+                <dxi-column dataField="name" [width]="300" caption="{{ 'SETTINGS.POSITIONS.NAME' | translate }}" ></dxi-column>
+                <dxi-column  dataField="availableSalary" [width]="150" alignment="left" caption="{{ 'SETTINGS.POSITIONS.AVAILABLE_SALARY' | translate }}"></dxi-column>
+                <dxi-column dataField="profile"  caption="{{ 'SETTINGS.POSITIONS.PROFILE' | translate }}"></dxi-column>
+                <dxi-column dataField="hasBoss"  caption="{{ 'SETTINGS.POSITIONS.HAS_BOSS' | translate }}"></dxi-column>
+                <dxi-column dataField="function" caption="{{ 'SETTINGS.POSITIONS.FUNCTION' | translate }}"></dxi-column>
+
+
+                <dxo-summary>
+                    <dxi-group-item
+                        column="availableSalary"
+                        summaryType="sum"
+                        valueFormat="number"
+                        [alignByColumn]="true"
+                        displayFormat="Total: {0}"
+                        [showInGroupFooter]="true">
+                    </dxi-group-item>
+                </dxo-summary>
+
+
+                <dxo-editing 
+                    mode="popup"
+                    [allowUpdating]="true"
+                    [allowDeleting]="true"
+                    [allowAdding]="true"
+                    [useIcons]="true">
+
+                    <dxo-form>
+                        <dxi-item caption="{{ 'SETTINGS.POSITIONS.BASIC_INFO' | translate }}" [colSpan]="2" itemType="group" colsp [colCount]="3">
+                            <dxi-item cssClass="form-control" [editorOptions]="{ disabled: true }" dataField="code"></dxi-item>
+                            <dxi-item dataField="name" [width]="300"></dxi-item>
+                            <dxi-item dataField="function" [width]="300"></dxi-item>
+                        </dxi-item>    
+                        <dxi-item caption="{{ 'SETTINGS.POSITIONS.SALARY_INFO' | translate }}" [colSpan]="2" itemType="group" [colCount]="3" >
+                            <dxi-item dataField="availableSalary" [width]="150"></dxi-item>
+                            <dxi-item editorType="dxCheckBox" dataField="hasBoss"></dxi-item>
+                            <dxi-item dataField="profile" [width]="300" editorType="dxTextArea" [editorOptions]="{ height: 90 }" [colSpan]="3"></dxi-item>
+                        </dxi-item>
+                    </dxo-form>
+
+                </dxo-editing>
+
+                <div *dxTemplate="let column of 'buttonsTemplate'">
+                    <jc-crud-buttons [data]="column.data" [config]="crudConfig"></jc-crud-buttons>
+                </div>
+
+
+            </dx-data-grid>
+        </div>
+
+
+        <dx-popup 
+            [showTitle]="true"
+            title="{{ 'SETTINGS.POSITIONS.TITLE' | translate }}"
+            [dragEnabled]="false"
+            [closeOnOutsideClick]="true"
+            [(visible)]="popupVisible">
+            <positions-form #form [position]="currentPosition" (formSubmitted)="formSubmittedHandler($event)" ></positions-form>
+        </dx-popup>
+
+        
+    </div>
+
+
+</div>

@@ -3,7 +3,7 @@ if not exists(select top 1 1 from INFORMATION_SCHEMA.COLUMNS where lower(TABLE_N
 	begin
 		CREATE TABLE UTILITIES (
 			Id int Not Null default 0,
-			Initials char(1) Not Null default '',
+			Inicials char(2) Not Null default '',
 			UtilityType varchar(max)  Not Null default '',
 			UtilityName Varchar(max) Not Null default ''
 		)

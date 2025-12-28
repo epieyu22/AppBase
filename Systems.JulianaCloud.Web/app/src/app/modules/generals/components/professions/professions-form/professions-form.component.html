@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="form-professions">
+        <form [formGroup]="form">
+            <div class="card-full">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.PROFESSIONS.CODE' | translate}}</label>
+                                <input readonly formControlName="key" type="number" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.PROFESSIONS.NAME' | translate}}</label>
+                                <input  required formControlName="name" type="text" class="form-control" style="text-transform:uppercase; background-color: white;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div (click)="saveChanges()" class="btn btn-icon btn-primary">
+                        <span class="btn-inner--icon">
+                            <i class="las la-plus-circle"></i>
+                        </span>
+                        {{ 'BUTTONS.SAVE' | translate}}
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+    </div>
+</div>

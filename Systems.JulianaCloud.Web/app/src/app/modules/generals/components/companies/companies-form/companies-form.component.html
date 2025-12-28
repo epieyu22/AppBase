@@ -1,0 +1,352 @@
+<div class="container">
+  <div class="form-companies">
+      <form [formGroup]="form">
+        <tabset type="pills" class="nav-fill flex-column flex-md-row last-tab-icon last-icon-default">
+          <tab>
+            <ng-template tabHeading>
+              <i class="medium-icon las la-book-open"></i> {{ 'GENERALS.COMPANIES.BASIC_INFO' | translate }}
+            </ng-template>
+            <br>
+
+            <div class="card-full">
+              <div class="card-body">
+                <dx-scroll-view width="100%" height="100%">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="form-group">
+                          <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODE' | translate}}</label>
+                          <input readonly formControlName="key" type="number" class="form-control">
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-5">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.NAME' | translate}}</label>
+                        <input  required formControlName="name" type="text" class="form-control" style="text-transform:uppercase;background-color:white;">
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-5">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODCOUNTRY' | translate}}</label>
+                        <ng-select required class="select-form"  #codCountry [items]="countries$ | async"
+                                  [selectOnTab]="true"
+                                  bindValue="key"
+                                  bindLabel="name"
+                                  formControlName="codCountry">
+                        </ng-select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="form-group">
+                          <label for="" class="form-control-label">{{'GENERALS.COMPANIES.TYPEDOC' | translate}}</label>
+                          <input required formControlName="typeDoc" type="text" class="form-control" style="background-color:white;"></div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.NUMDOC' | translate}}</label>
+                        <input  required formControlName="numDoc" type="text" class="form-control" style="background-color:white;"></div>
+                    </div>
+
+                    <div class="col-md-1">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.DVER' | translate}}</label>
+                        <input  readonly formControlName="dVer" type="text" class="form-control"></div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.TEL' | translate}}</label>
+                        <input  formControlName="tel" type="text" class="form-control" style="background-color:white;"></div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.FAX' | translate}}</label>
+                        <input  formControlName="fax" type="text" class="form-control" style="background-color:white;"></div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.ADDRESS' | translate}}</label>
+                        <input  formControlName="address" type="text" class="form-control" style="background-color:white;"></div>
+                    </div>
+                  </div>                
+                </dx-scroll-view>
+              </div>
+            </div>
+          </tab> 
+
+          <tab>
+            <ng-template tabHeading>
+              <i class="medium-icon las la-book-open"></i> {{ 'GENERALS.COMPANIES.DEPENDENCES' | translate }}
+            </ng-template>
+            <br>
+
+            <div class="card-full">
+              <div class="card-body">
+                <dx-scroll-view width="100%" height="100%">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODDEP' | translate}}</label>
+                        <ng-select class="select-form"  #codDep [items]="departaments$ | async"
+                                  [selectOnTab]="true"
+                                  bindValue="key"
+                                  bindLabel="name"
+                                  formControlName="codDep">
+                        </ng-select>
+                      </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODCITY' | translate}}</label>
+                        <ng-select class="select-form"  #codCity [items]="cities$ | async"
+                                  [selectOnTab]="true"
+                                  bindValue="key"
+                                  bindLabel="name"
+                                  formControlName="codCity">
+                        </ng-select>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODARL' | translate}}</label>
+                        <ng-select class="select-form"  #codArl [items]="arls$ | async"
+                                  [selectOnTab]="true"
+                                  bindValue="key"
+                                  bindLabel="name"
+                                  formControlName="codArl">
+                        </ng-select>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODSUBSIPAG' | translate}}</label>
+                        <ng-select class="select-form"  #codSubsiPag [items]="subsidiaries$ | async"
+                                  [selectOnTab]="true"
+                                  bindValue="key"
+                                  bindLabel="name"
+                                  formControlName="codSubsiPag">
+                        </ng-select>
+                      </div>
+                    </div>
+                  </div>
+                </dx-scroll-view>              
+              </div>
+            </div>
+          </tab>
+          
+          <tab>
+            <ng-template tabHeading>
+              <i class="medium-icon las la-id-card"></i> {{ 'GENERALS.COMPANIES.PROFILE' | translate }}
+            </ng-template>
+            <br>
+
+            <div class="card-full">
+              <div class="card-body">
+                <dx-scroll-view width="100%" height="100%">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CLASSCONTRIB' | translate}}</label>
+                        <input  formControlName="classContrib" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.FORMPRESENTS' | translate}}</label>
+                        <input  formControlName="formPresents" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.FECINSTALL' | translate}}</label>
+                        <input formControlName="fecInstall" type="datetime-local" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.FECULTACCESS' | translate}}</label>
+                        <input formControlName="fecUltAccess" type="datetime-local"  class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row" >
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.DAISVALIDITY' | translate}}</label>
+                        <input  formControlName="daisValidity" type="number" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.FECEXPIREDLIC' | translate}}</label>
+                        <input  formControlName="fecExpiredLic" type="datetime-local" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CLAVE' | translate}}</label>
+                        <input  formControlName="clave" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODHABILITA' | translate}}</label>
+                        <input  formControlName="codHabilita" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.NUMLICENCES' | translate}}</label>
+                        <input  formControlName="numLicences" type="number" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.CODLOCAL' | translate}}</label>
+                        <input  formControlName="codLocal" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+                  </div>
+                </dx-scroll-view>
+              </div>
+            </div>
+          </tab>        
+
+          <tab class="last-one">
+            <ng-template tabHeading>
+              <i class="medium-icon las la-cog"></i> {{ 'GENERALS.COMPANIES.CONFIGURATION' | translate }}
+            </ng-template>
+            <br>
+
+            <div class="card-full">
+              <div class="card-body">
+                <dx-scroll-view width="100%" height="100%">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.SERVER' | translate}}</label>
+                        <input  formControlName="server" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.DATABASE' | translate}}</label>
+                        <input  formControlName="dataBase" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.USER' | translate}}</label>
+                        <input  formControlName="user" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.PASSW' | translate}}</label>
+                        <input  formControlName="passw" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.ROUTE' | translate}}</label>
+                        <input  formControlName="route" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.SERIAL' | translate}}</label>
+                        <input  formControlName="serial" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">{{'GENERALS.COMPANIES.STATE' | translate}}</label>
+                        <input  formControlName="state" type="text" class="form-control" style="background-color:white;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                          <p class="form-control-label">{{'GENERALS.COMPANIES.MODNOM' | translate}} </p>
+                          <label class="custom-toggle">
+                              <input formControlName="modNom" type="checkbox">
+                              <span class="custom-toggle-slider rounded-circle"></span>
+                          </label>
+                    </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                          <p class="form-control-label">{{'GENERALS.COMPANIES.MODRH' | translate}} </p>
+                          <label class="custom-toggle">
+                              <input formControlName="modRh" type="checkbox">
+                              <span class="custom-toggle-slider rounded-circle"></span>
+                          </label>
+                    </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                          <p class="form-control-label">{{'GENERALS.COMPANIES.MODMIS' | translate}} </p>
+                          <label class="custom-toggle">
+                              <input formControlName="modMis" type="checkbox">
+                              <span class="custom-toggle-slider rounded-circle"></span>
+                          </label>
+                    </div>
+                    </div>
+                  </div>
+                </dx-scroll-view>
+              </div>
+            </div>
+          </tab>        
+        </tabset>
+        
+        <div class="row">
+          <div class="col-md-12">
+              <div (click)="saveChanges()" class="btn btn-icon btn-primary">
+                  <span class="btn-inner--icon">
+                      <i class="las la-plus-circle"></i>
+                  </span>
+                  {{ 'BUTTONS.SAVE' | translate}}
+              </div>
+          </div>
+        </div>
+      </form>
+      <br>
+  </div>
+</div>

@@ -16,12 +16,13 @@
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -65,11 +66,10 @@
   <ItemGroup>
     <Build Include="version 1.0.0\03 migrateBooleanFieldsInPositions.sql" />
     <Build Include="version 1.0.0\04 migrateBooleanFieldsInCompanies.sql" />
-    <Build Include="version 1.0.0\05 migrateBooleanFieldsInBranchOffices.sql" />
+    <Build Include="version 1.0.0\05 migrateBooleanFieldsInSubsicdiaries.sql" />
     <Build Include="version 1.0.0\06 migrateDateFieldsInCompanies.sql" />
     <Build Include="version 1.0.0\07 alterTypeFieldsInCompanies.sql" />
     <Build Include="version 1.0.0\08 alterTypeFieldsInHolidays.sql" />
     <Build Include="version 1.0.0\09 tableUtilities.sql" />
-    <Build Include="version 1.0.0\10 migrateBooleanFieldsInCostCenters.sql" />
   </ItemGroup>
 </Project>

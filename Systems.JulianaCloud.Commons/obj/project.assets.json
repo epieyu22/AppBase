@@ -446,11 +446,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Commons\\Systems.JulianaCloud.Commons.csproj",
+      "projectUniqueName": "C:\\julianacloud\\Systems.JulianaCloud.Commons\\Systems.JulianaCloud.Commons.csproj",
       "projectName": "Systems.JulianaCloud.Commons",
-      "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Commons\\Systems.JulianaCloud.Commons.csproj",
+      "projectPath": "C:\\julianacloud\\Systems.JulianaCloud.Commons\\Systems.JulianaCloud.Commons.csproj",
       "packagesPath": "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Commons\\obj\\",
+      "outputPath": "C:\\julianacloud\\Systems.JulianaCloud.Commons\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Carlos Epieyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -467,8 +467,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj": {
-              "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj"
+            "C:\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj": {
+              "projectPath": "C:\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj"
             }
           }
         }

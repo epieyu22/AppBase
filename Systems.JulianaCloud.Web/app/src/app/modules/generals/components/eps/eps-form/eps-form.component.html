@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="form-eps">
+      <form [formGroup]="form">
+          <div class="card-full">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.CODE' | translate}}</label>
+                      <input readonly formControlName="key" type="number" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.NAME' | translate}}</label>
+                      <input required formControlName="name" type="text" style="text-transform: uppercase;background-color: white;" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.NUMDOC' | translate}}</label>
+                      <input required formControlName="numDoc" type="text" style="background-color: white;" class="form-control" >
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.DVER' | translate}}</label>
+                      <input required formControlName="dVer" type="text" class="form-control">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.ADDRESS' | translate}}</label>
+                      <input formControlName="address" type="text" class="form-control" style="background-color: white;">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.TEL' | translate}}</label>
+                      <input formControlName="tel1" type="text"  class="form-control" style="background-color: white;">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.TELDOS' | translate}}</label>
+                      <input formControlName="tel2" type="text" class="form-control" style="background-color: white;">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.CONTAC' | translate}}</label>
+                      <input formControlName="contac" type="text" class="form-control" style="background-color: white;">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.FAX' | translate}}</label>
+                      <input required formControlName="fax" type="text" class="form-control" style="background-color: white;">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.TOTAL' | translate}}</label>
+                      <input readonly formControlName="total" type="number" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="" class="form-control-label">{{'GENERALS.EPS.CODSUPER' | translate}}</label>
+                      <input required formControlName="codSuper" type="text" class="form-control" style="background-color: white;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                  <div (click)="saveChanges()" class="btn btn-icon btn-primary">
+                      <span class="btn-inner--icon">
+                          <i class="las la-plus-circle"></i>
+                      </span>
+                      {{ 'BUTTONS.SAVE' | translate}}
+                  </div>
+              </div>
+          </div>
+      </form>
+      <br>
+  </div>
+</div>

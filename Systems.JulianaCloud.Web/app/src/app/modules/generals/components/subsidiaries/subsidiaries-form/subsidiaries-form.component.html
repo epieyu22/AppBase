@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="form-subsidiaries">
+        <form [formGroup]="form">
+            <div class="card-full">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.CODE' | translate}}</label>
+                                <input readonly formControlName="key" type="number" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.NAME' | translate}}</label>
+                                <input  required formControlName="name" type="text" class="form-control" style="text-transform: uppercase; background-color: white;">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.CODZONE' | translate}}</label>
+                                <ng-select class="select-form"  #codZone [items]="zones$ | async"
+                                    [selectOnTab]="true"
+                                    bindValue="key"
+                                    bindLabel="name"
+                                    formControlName="codZone">
+                                </ng-select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.CODCAJA' | translate}}</label>
+                                <ng-select class="select-form"  #codCaja [items]="cajas$ | async"
+                                    [selectOnTab]="true"
+                                    bindValue="key"
+                                    bindLabel="name"
+                                    formControlName="codCaja">
+                                </ng-select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.CODSSUBSISEC' | translate}}</label>
+                                <input  required formControlName="codSubsiSec" type="text" class="form-control" style="background-color: white;"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.NUMDOC' | translate}}</label>
+                                <input  required formControlName="numDoc" type="text" class="form-control" style="background-color: white;">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.DVER' | translate}}</label>
+                                <input  required formControlName="dVer" type="text" class="form-control">
+                            </div>
+                        </div>    
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.CODAGENCY' | translate}}</label>
+                                <input  required formControlName="codAgency" type="numbre" class="form-control" style="background-color: white;">
+                            </div>
+                        </div> 
+
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <p class="form-control-label">{{'GENERALS.SUBSIDIARIES.CUMMETA' | translate}} </p>
+                                <label class="custom-toggle">
+                                    <input formControlName="cumMeta" type="checkbox">
+                                    <span class="custom-toggle-slider rounded-circle"></span>
+                                </label>
+                            </div>
+                        </div>
+                                            
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <p class="form-control-label">{{'GENERALS.SUBSIDIARIES.HASCOMPANY' | translate}} </p>
+                                <label class="custom-toggle">
+                                    <input formControlName="hasCompany" type="checkbox">
+                                    <span class="custom-toggle-slider rounded-circle"></span>
+                                </label>
+                        </div>
+                        </div>
+        
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="" class="form-control-label">{{'GENERALS.SUBSIDIARIES.UNIFIED' | translate}}</label>
+                                <input  required formControlName="unified" type="text" class="form-control">
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div (click)="saveChanges()" class="btn btn-icon btn-primary">
+                        <span class="btn-inner--icon">
+                            <i class="las la-plus-circle"></i>
+                        </span>
+                        {{ 'BUTTONS.SAVE' | translate}}
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+    </div>
+</div>

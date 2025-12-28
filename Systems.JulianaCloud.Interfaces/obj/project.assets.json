@@ -69,11 +69,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj",
+      "projectUniqueName": "C:\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj",
       "projectName": "Systems.JulianaCloud.Interfaces",
-      "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj",
+      "projectPath": "C:\\julianacloud\\Systems.JulianaCloud.Interfaces\\Systems.JulianaCloud.Interfaces.csproj",
       "packagesPath": "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Interfaces\\obj\\",
+      "outputPath": "C:\\julianacloud\\Systems.JulianaCloud.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Carlos Epieyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,11 +90,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Domain\\Systems.JulianaCloud.Domain.csproj": {
-              "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Domain\\Systems.JulianaCloud.Domain.csproj"
+            "C:\\julianacloud\\Systems.JulianaCloud.Domain\\Systems.JulianaCloud.Domain.csproj": {
+              "projectPath": "C:\\julianacloud\\Systems.JulianaCloud.Domain\\Systems.JulianaCloud.Domain.csproj"
             },
-            "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.TransferObjects\\Systems.JulianaCloud.TransferObjects.csproj": {
-              "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.TransferObjects\\Systems.JulianaCloud.TransferObjects.csproj"
+            "C:\\julianacloud\\Systems.JulianaCloud.TransferObjects\\Systems.JulianaCloud.TransferObjects.csproj": {
+              "projectPath": "C:\\julianacloud\\Systems.JulianaCloud.TransferObjects\\Systems.JulianaCloud.TransferObjects.csproj"
             }
           }
         }

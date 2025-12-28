@@ -1,0 +1,87 @@
+<div class="container-fluid">
+    <div class="card-full">
+        <div class="card-header" style="background-color:rgb(245, 251, 251); border: 0ch;height: 2cm;">
+            <h4 style="font-size: large;color: rgb(146, 141, 141);">{{ 'GENERALS.COMPANIES.TITLE' | translate }}</h4>
+            <hr style="border-color: black;">
+        </div>
+        
+        <div class="card-body">
+            <jc-pdf-export-button [grid]="grid"></jc-pdf-export-button>
+            <dx-data-grid #grid
+                (onContentReady)="onContentReady($event)"
+                [dataSource]="companyStore"
+                [allowColumnReordering]="true"
+                [allowColumnResizing]="true"
+                [hoverStateEnabled]="true"
+                [columnAutoWidth]="true"
+                [showBorders]="true"
+                (onToolbarPreparing)="prepareToolbar($event)"
+              >
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-export [enabled]="true"></dxo-export>
+              <dxo-filter-row [visible]="true"></dxo-filter-row>
+              <dxo-header-filter [visible]="true"></dxo-header-filter>
+              <dxo-search-panel [visible]="true" [highlightCaseSensitive]="true"></dxo-search-panel>
+              <dxo-group-panel [visible]="true"></dxo-group-panel>
+              <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+
+              <dxi-column type="buttons">
+                <dxi-button name="edit" icon="las la-edit" [onClick]='loadItem.bind(this)'>
+                </dxi-button>
+                <dxi-button name="delete" icon="las la-trash" [onClick]='deleteEntry.bind(this)'></dxi-button>
+              </dxi-column>
+
+              <dxi-column dataField="key"  alignment="left" caption="{{ 'GENERALS.COMPANIES.CODE' | translate }}"></dxi-column>
+              <dxi-column dataField="name" caption="{{ 'GENERALS.COMPANIES.NAME' | translate }}"></dxi-column>
+              <dxi-column dataField="typeDoc" caption="{{ 'GENERALS.COMPANIES.TYPEDOC' | translate }}"></dxi-column>
+              <dxi-column dataField="numDoc" caption="{{ 'GENERALS.COMPANIES.NUMDOC' | translate }}"></dxi-column>
+              <dxi-column dataField="dVer" caption="{{ 'GENERALS.COMPANIES.DVER' | translate }}"></dxi-column>
+              <dxi-column dataField="address" caption="{{ 'GENERALS.COMPANIES.ADDRESS' | translate }}"></dxi-column>
+              <dxi-column dataField="department.name" caption="{{ 'GENERALS.COMPANIES.CODDEP' | translate }}"></dxi-column>
+              <dxi-column dataField="city.name" caption="{{ 'GENERALS.COMPANIES.CODCITY' | translate }}"></dxi-column>
+              <dxi-column dataField="tel" caption="{{ 'GENERALS.COMPANIES.TEL' | translate }}"></dxi-column>
+              <dxi-column dataField="fax" caption="{{ 'GENERALS.COMPANIES.FAX' | translate }}"></dxi-column>
+              <dxi-column dataField="arl.name" caption="{{ 'GENERALS.COMPANIES.CODARL' | translate }}"></dxi-column>
+              <dxi-column dataField="subsidiary.name" caption="{{ 'GENERALS.COMPANIES.CODSUBSIPAG' | translate }}"></dxi-column>
+              <dxi-column dataField="classContrib" caption="{{ 'GENERALS.COMPANIES.CLASSCONTRIB' | translate }}"></dxi-column>
+              <dxi-column dataField="formPresents" caption="{{ 'GENERALS.COMPANIES.FORMPRESENTS' | translate }}"></dxi-column>
+              <dxi-column dataField="fecInstall"  dataType="date" format="dd/MM/yyyy" caption="{{ 'GENERALS.COMPANIES.FECINSTALL' | translate }}"></dxi-column>
+              <dxi-column dataField="fecUltAccess" dataType="date" format="dd/MM/yyyy" caption="{{ 'GENERALS.COMPANIES.FECULTACCESS' | translate }}"></dxi-column>
+              <dxi-column dataField="daisValidity" alignment="left" caption="{{ 'GENERALS.COMPANIES.DAISVALIDITY' | translate }}"></dxi-column>
+              <dxi-column dataField="fecExpiredLic" dataType="date" format="dd/MM/yyyy" caption="{{ 'GENERALS.COMPANIES.FECEXPIREDLIC' | translate }}"></dxi-column>
+              <dxi-column dataField="clave" caption="{{ 'GENERALS.COMPANIES.CLAVE' | translate }}"></dxi-column>
+              <dxi-column dataField="codHabilita" caption="{{ 'GENERALS.COMPANIES.CODHABILITA' | translate }}"></dxi-column>
+              <dxi-column dataField="country.name" caption="{{ 'GENERALS.COMPANIES.CODCOUNTRY' | translate }}"></dxi-column>
+              <dxi-column dataField="numLicences" alignment="left" caption="{{ 'GENERALS.COMPANIES.NUMLICENCES' | translate }}"></dxi-column>
+              <dxi-column dataField="server" caption="{{ 'GENERALS.COMPANIES.SERVER' | translate }}"></dxi-column>
+              <dxi-column dataField="dataBase" caption="{{ 'GENERALS.COMPANIES.DATABASE' | translate }}"></dxi-column>
+              <dxi-column dataField="user" caption="{{ 'GENERALS.COMPANIES.USER' | translate }}"></dxi-column>
+              <dxi-column dataField="passw" caption="{{ 'GENERALS.COMPANIES.PASSW' | translate }}"></dxi-column>
+              <dxi-column dataField="route" caption="{{ 'GENERALS.COMPANIES.ROUTE' | translate }}"></dxi-column>
+              <dxi-column dataField="modNom" caption="{{ 'GENERALS.COMPANIES.MODNOM' | translate }}"></dxi-column>
+              <dxi-column dataField="modRh" caption="{{ 'GENERALS.COMPANIES.MODRH' | translate }}"></dxi-column>
+              <dxi-column dataField="modMis" caption="{{ 'GENERALS.COMPANIES.MODMIS' | translate }}"></dxi-column>
+              <dxi-column dataField="serial" caption="{{ 'GENERALS.COMPANIES.SERIAL' | translate }}"></dxi-column>
+              <dxi-column dataField="codLocal" caption="{{ 'GENERALS.COMPANIES.CODLOCAL' | translate }}"></dxi-column>
+              <dxi-column dataField="state" caption="{{ 'GENERALS.COMPANIES.STATE' | translate }}"></dxi-column>
+
+              <dxo-editing mode="popup"
+                           [allowUpdating]="true"
+                           [allowDeleting]="true"
+                           [allowAdding]="true"
+                           [useIcons]="true">
+              </dxo-editing>
+            </dx-data-grid>
+        </div>
+
+        <dx-popup 
+            [showTitle]="true"
+            title="{{ 'GENERALS.COMPANIES.TITLE' | translate }}"
+            [dragEnabled]="false"
+            [closeOnOutsideClick]="true"
+            [(visible)]="popupVisible">
+            <companies-form #form [model]="currentModel" (formSubmitted)="formSubmittedHandler($event)" ></companies-form>
+        </dx-popup>
+    </div>
+</div>

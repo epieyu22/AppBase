@@ -12,7 +12,7 @@ namespace Systems.JulianaCloud.TransferObjects
         public string PptoSap { get; set; }
         public string Pmp { get; set; }
         public string ProfitCenter { get; set; }
-        public string BranchOffice { get; set; }
+        public string Sucursal { get; set; }
 
         #endregion
     }

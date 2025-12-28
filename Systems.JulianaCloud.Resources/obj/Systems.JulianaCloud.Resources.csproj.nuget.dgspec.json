@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj": {}
+    "C:\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj": {}
   },
   "projects": {
-    "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj": {
+    "C:\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj",
+        "projectUniqueName": "C:\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj",
         "projectName": "Systems.JulianaCloud.Resources",
-        "projectPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj",
+        "projectPath": "C:\\julianacloud\\Systems.JulianaCloud.Resources\\Systems.JulianaCloud.Resources.csproj",
         "packagesPath": "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\",
-        "outputPath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Resources\\obj\\",
+        "outputPath": "C:\\julianacloud\\Systems.JulianaCloud.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carlos Epieyu\\AppData\\Roaming\\NuGet\\NuGet.Config",

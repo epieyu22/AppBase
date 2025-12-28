@@ -1,0 +1,175 @@
+<div class="container">
+    <div class="form-positions">
+
+        <jc-error-summary [form]="form"></jc-error-summary>
+
+        <!-- Descomentar para ver los datos {{ position | json }} -->
+        <form [formGroup]="form">
+            <tabset type="pills" class="nav-fill flex-column flex-md-row last-tab-icon last-icon-default">
+                <!-- Basic data -->
+                <tab>
+                <ng-template tabHeading>
+                    <i class="medium-icon las la-book-open"></i> {{ 'SETTINGS.POSITIONS.BASIC_INFO' | translate }}
+                </ng-template>
+                <br>
+
+                <div class="card-full">
+                    <div class="card-body">
+                        <dx-scroll-view width="100%" height="100%">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.CODE' | translate}}</label>
+                                    <input readonly formControlName="code" type="number" class="form-control"></div>
+                            </div>
+                        
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.NAME' | translate}}</label>
+                                    <input  formControlName="name" type="text" class="form-control" style="text-transform:uppercase;background-color: white;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.AVAILABLE_SALARY' | translate}}</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span id="inputGroupPrepend2" class="input-group-text">
+                                                    <i class="las la-dollar-sign"></i>
+                                                </span>
+                                            </div>
+                                            <input type="number" formControlName="availableSalary" class="form-control" style="background-color: white;">
+                                        </div>
+                                    </div>    
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.ALTERNATIVE_CODE' | translate}}</label>
+                                        <input formControlName="alternativeCode" type="number" class="form-control" style="background-color: white;">
+                                    </div>
+                                </div>
+                            </div>
+                        </dx-scroll-view>
+                        </div>
+                    </div>
+                </tab>
+                
+                <!-- Salary information -->
+                <tab>
+                    <ng-template tabHeading>
+                        <i class="medium-icon las la-id-card"></i> {{ 'SETTINGS.POSITIONS.PROFILE' | translate }}
+                    </ng-template>
+                    <br>
+                    
+                    <div class="card-full">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.DESCRIPTION' | translate}}</label>
+                                        <textarea class="form-control" formControlName="profile" style="background-color: white;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.FUNCTION' | translate}}</label>
+                                        <textarea class="form-control" formControlName="function" style="background-color: white;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.OBJECTIVE' | translate}}</label>
+                                        <textarea class="form-control" formControlName="objective" style="background-color: white;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tab>
+
+                <tab class="last-one">
+                    <ng-template tabHeading>
+                        <i class="medium-icon las la-cog"></i>
+                    </ng-template>
+                    <br>
+                    
+                    <div class="card-full">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <p class="form-control-label">{{'SETTINGS.POSITIONS.HAS_BOSS' | translate}} </p>
+                                        <label class="custom-toggle">
+                                            <input formControlName="hasBoss" type="checkbox">
+                                            <span class="custom-toggle-slider rounded-circle"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="form-control-label">{{'SETTINGS.POSITIONS.BOSS_CODE' | translate}}</label>
+                                            <ng-select class="select-form"  #bossPosition [items]="positions$ | async"
+                                                        [selectOnTab]="true"
+                                                        bindValue="code"
+                                                        bindLabel="name"
+                                                        formControlName="bossPosition">
+                                            </ng-select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <p class="form-control-label">{{'SETTINGS.POSITIONS.AUTHORIZE_SALARY' | translate}} </p>
+                                        <label class="custom-toggle">
+                                            <input formControlName="authorizeSalaries" type="checkbox">
+                                            <span class="custom-toggle-slider rounded-circle"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <p class="form-control-label">{{'SETTINGS.POSITIONS.RECEIVE_MAILS' | translate}} </p>
+                                        <label class="custom-toggle">
+                                            <input formControlName="receiveMails" type="checkbox">
+                                            <span class="custom-toggle-slider rounded-circle"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <p class="form-control-label">{{'SETTINGS.POSITIONS.ARTICLE_209' | translate}} </p>
+                                        <label class="custom-toggle">
+                                            <input formControlName="art209" type="checkbox">
+                                            <span class="custom-toggle-slider rounded-circle"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tab>
+            </tabset>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" (click)="saveChanges()" class="btn btn-icon btn-primary">
+                        <span class="btn-inner--icon">
+                            <i class="las la-plus-circle"></i>
+                        </span>
+                        {{ 'BUTTONS.SAVE' | translate}}
+                    </button>
+                </div>
+            </div>
+        </form>
+        <br>
+    </div>
+</div>

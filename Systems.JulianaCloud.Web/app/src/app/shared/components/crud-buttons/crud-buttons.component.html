@@ -1,0 +1,9 @@
+<div class="btn-group" role="group" aria-label="crud buttons">
+  <button *ngIf="config.enableEdit" (click)="config.onEdit()" type="button" class="btn btn-sm btn-outline-primary">
+    <i class="las la-edit"></i>
+  </button>
+  <button *ngIf="config.enableDelete" (click)="config.onDelete()" type="button" class="btn btn-sm btn-outline-danger">
+    <i class="las la-trash"></i>
+  </button>
+  <ng-content></ng-content>
+</div>

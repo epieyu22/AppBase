@@ -1,0 +1,165 @@
+{
+  "SETTINGS": {
+    "POSITIONS": {
+      "TITLE": "Positions",
+      "CODE": "Code",
+      "NAME": "Name",
+      "AVAILABLE_SALARY": "Available salary",
+      "HAS_BOSS": "Has boss?",
+      "PROFILE": "Profile",
+      "FUNCTION": "Function",
+      "BASIC_INFO": "Basic info.",
+      "SALARY_INFO": "Salary infor."
+    },
+
+    "GENERALS": {
+      "COMPANIES": {
+        "TITLE": "Companies",
+        "CODE": "Code",
+        "NAME": "Name",
+        "TYPEDOC": "Type Doc",
+        "NUMDOC": "Document",
+        "DVER": "Vd",
+        "ADDRESS": "Address",
+        "CODDEP": "Departament",
+        "CODCITY": "City",
+        "TEL": "Telephone",
+        "FAX": "Fax",
+        "CODARL": "Danger",
+        "CODSUBSIPAG": "Subsidiary",
+        "CLASSCONTRIB": "Contrib",
+        "FORMPRESENTS": "Form Present",
+        "FECINSTALL": "Date Install",
+        "FECULTACCES": "Date Acces",
+        "DAISVALIDITY": "Dais Validity",
+        "FECEXPIREDLIC": "Expired Date",
+        "CLAVE": "Serial Machine",
+        "CODHABILITA": "Habilited Code",
+        "CODCOUNTRY": "Country",
+        "NUMLICENCES": "No. Licences",
+        "SERVER": "Serve",
+        "DATABASE": "Data Base",
+        "USER": "User",
+        "PASSW": "Password",
+        "ROUTE": "Rote",
+        "MODNOM": "Payroll Module",
+        "MODRH": "H.R Module",
+        "MODMIS": "M.I.S Module",
+        "SERIAL": "Serial",
+        "CODLOCAL": "Local Code",
+        "STATE": "State",
+        "BASIC_INFO": "Basic info.",
+        "PROFILE": "General info.",
+        "CONFIGURATION": "Configuration",
+        "DEPENDENCES": "Dependences"
+      },
+
+      "EPS": {
+        "TITLE": "Eps",
+        "CODE": "Code",
+        "NAME": "Name",
+        "NUMDOC": "Document",
+        "DVER": "Vd",
+        "ADRESS": "Adress",
+        "TEL": "Telephone1",
+        "TELDOS": "Telephone2",
+        "FAX": "Fax",
+        "CONTAC": "Contac",
+        "TOTAL": "Affiliates",
+        "CODSUPER": "Code Super"
+      },
+
+      "DEPARTMENTS": {
+        "TITLE": "Departaments",
+        "CODE": "Code",
+        "CODDANE": "Code Dane",
+        "NAME": "Name"
+      },
+
+      "ARL": {
+        "TITLE": "Arl",
+        "CODE": "Code",
+        "NAME": "Name",
+        "NUMDOC": "Document",
+        "DVER": "Vd",
+        "ADRESS": "Adress",
+        "TEL": "Telephone1",
+        "TELDOS": "Telephone2",
+        "FAX": "Fax",
+        "CONTACT": "Contac",
+        "TOTAL": "Affiliates",
+        "CODSUPER": "Code Super"
+      },
+
+      "CITIES": {
+        "TITLE": "Cities",
+        "CODE": "Code",
+        "CODDEPTO": "Code Departament",
+        "CODDANE": "Code Dane",
+        "NAME": "Name"
+      },
+
+      "SUBSIDIARIES": {
+        "TITLE": "Subsidiaries",
+        "CODE": "Code",
+        "CODZONE": "Code Zone",
+        "NAME": "Name",
+        "CUMMETA": "Fulfilled Goal",
+        "CODCAJA": "Code Box",
+        "CODSSUBSISEC": "Code Sundidiary Scundary",
+        "HASCOMPANY": "Has Company",
+        "NUMDOC": "Num Document",
+        "DVER": "Dv",
+        "UNIFIED": "Unified",
+        "CODAGENCY": "Code Agency"
+      },
+
+      "CAJAS": {
+        "TITLE": "Cajas",
+        "CODE": "Code",
+        "NAME": "Name",
+        "NUMDOC": "Document",
+        "DVER": "Vd",
+        "ADDRESS": "Address",
+        "TEL": "Telephone1",
+        "TELDOS": "Telephone2",
+        "FAX": "Fax",
+        "CONTAC": "Contact",
+        "TOTAL": "Affiliates",
+        "CODSUPER": "Cod Super"
+      },
+
+      "COSTCENTERS": {
+        "TITLE": "Cost Center",
+        "CODE": "Code",
+        "NAME": "Name",
+        "COSTCENTERSEC": "C Center Sec.",
+        "PPTOSAP": "Budget Sap",
+        "PMP": "Pmp",
+        "PROFITCENTER": "Profit Center",
+        "SUBSIDIARY": "Subsidiary"
+      },
+
+      "HOLIDAYS": {
+        "TITLE": "Holidays",
+        "CODE": "Code",
+        "DATE": "Holiday date",
+        "NAME": "description"
+      }
+    },
+
+    "BUTTONS": {
+      "ACCEPT": "Accept"
+    },
+    "MESSAGES": {
+        "SERVER_ERROR": "Has ocurred an error on server."
+    },
+    "AUTH": {
+        "INVALID_DATA": "Data was invalid.",
+        "SESSION_EXPIRED": "Your session has expired.",
+        "WELCOME": "Welcome",
+        "USER_NOT_FOUND": "It doesn't exist a user with these credentials.",
+        "FORGOT_PASSWORD": "Forgot password?"
+    }
+  }
+}

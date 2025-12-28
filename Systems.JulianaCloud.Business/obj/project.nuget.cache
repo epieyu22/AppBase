@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/PXbowWX1SG58U0XPTwyo6D3T97pKYEQQ1iKEPGdMcFMVR/+a+T/asWbAY0QeRzGwPs5Zf5FzYEOemV7hn/9rw==",
+  "dgSpecHash": "tU7jcKR4/62C5lHFsq/D8ouO74CfeMboSxtN10oxrT4LOs6MiahBE8B2vHsY2zSngOAJJR1VbKF/q2bS/NVbHw==",
   "success": true,
-  "projectFilePath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Business\\Systems.JulianaCloud.Business.csproj",
+  "projectFilePath": "C:\\julianacloud\\Systems.JulianaCloud.Business\\Systems.JulianaCloud.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\linqkit\\1.2.2\\linqkit.1.2.2.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\linqkit.core\\1.2.2\\linqkit.core.1.2.2.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
@@ -35,29 +32,13 @@
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.19.0\\microsoft.identitymodel.jsonwebtokens.6.19.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.identitymodel.logging\\6.19.0\\microsoft.identitymodel.logging.6.19.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.19.0\\microsoft.identitymodel.tokens.6.19.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.win32.registry\\4.6.0\\microsoft.win32.registry.4.6.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.6.0\\runtime.native.system.data.sqlclient.sni.4.6.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.codedom\\4.6.0\\system.codedom.4.6.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.configuration.configurationmanager\\4.6.0\\system.configuration.configurationmanager.4.6.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.data.sqlclient\\4.7.0\\system.data.sqlclient.4.7.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.19.0\\system.identitymodel.tokens.jwt.6.19.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.security.accesscontrol\\4.6.0\\system.security.accesscontrol.4.6.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.6.0\\system.security.cryptography.protecteddata.4.6.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.security.permissions\\4.6.0\\system.security.permissions.4.6.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.security.principal.windows\\4.6.0\\system.security.principal.windows.4.6.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
-    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.windows.extensions\\4.6.0\\system.windows.extensions.4.6.0.nupkg.sha512"
+    "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": [
     {
@@ -65,16 +46,6 @@
       "level": "Warning",
       "warningLevel": 1,
       "message": "El paquete \"System.IdentityModel.Tokens.Jwt\" 6.19.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "libraryId": "System.IdentityModel.Tokens.Jwt",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"System.IdentityModel.Tokens.Jwt\" 6.19.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

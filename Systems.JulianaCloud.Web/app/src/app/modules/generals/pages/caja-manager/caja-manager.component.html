@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="card-full">
+        <div class="card-header" style="background-color:rgb(245, 251, 251); border: 0ch;height: 2cm;">
+            <h4 style="font-size: large;color: rgb(146, 141, 141);">{{ 'GENERALS.CAJAS.TITLE' | translate }}</h4>
+            <hr style="border-color: black;">
+        </div>
+    
+        <div class="card-body">            
+            <jc-pdf-export-button [grid]="grid"></jc-pdf-export-button>
+            <dx-data-grid #grid
+                (onContentReady)="onContentReady($event)"
+                [dataSource]="cajaStore"
+                [allowColumnReordering]="true"
+                [allowColumnResizing]="true"
+                [hoverStateEnabled]="true"
+                [showBorders]="true"
+                (onToolbarPreparing)="prepareToolbar($event)"
+              >
+              <dxo-export [enabled]="true"></dxo-export>
+              <dxo-filter-row [visible]="true"></dxo-filter-row>
+              <dxo-header-filter [visible]="true"></dxo-header-filter>
+              <dxo-paging [pageSize]="10"></dxo-paging>
+              <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[10, 25]"></dxo-pager>
+              <dxo-search-panel [visible]="true" [highlightCaseSensitive]="true"></dxo-search-panel>
+              <dxo-group-panel [visible]="true"></dxo-group-panel>
+              <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+
+              <dxi-column type="buttons">
+                <dxi-button name="edit" icon="las la-edit" [onClick]='loadItem.bind(this)'>
+                </dxi-button>
+                <dxi-button name="delete" icon="las la-trash" [onClick]='deleteEntry.bind(this)'></dxi-button>
+              </dxi-column>
+
+              <dxi-column dataField="key" [width]="90" alignment="left" caption="{{ 'GENERALS.CAJAS.CODE' | translate }}"></dxi-column>
+              <dxi-column dataField="name" [width]="300" caption="{{ 'GENERALS.CAJAS.NAME' | translate }}"></dxi-column>
+              <dxi-column dataField="numDoc" [width]="120" caption="{{ 'GENERALS.CAJAS.NUMDOC' | translate }}"></dxi-column>
+              <dxi-column dataField="dVer" [width]="70" caption="{{ 'GENERALS.CAJAS.DVER' | translate }}"></dxi-column>
+              <dxi-column dataField="address" [width]="300" caption="{{ 'GENERALS.CAJAS.ADDRESS' | translate }}"></dxi-column>
+              <dxi-column dataField="tel1" [width]="120" caption="{{ 'GENERALS.CAJAS.TEL' | translate }}"></dxi-column>
+              <dxi-column dataField="tel2" [width]="120" caption="{{ 'GENERALS.CAJAS.TELDOS' | translate }}"></dxi-column>
+              <dxi-column dataField="fax" [width]="120" caption="{{ 'GENERALS.CAJAS.FAX' | translate }}"></dxi-column>
+              <dxi-column dataField="contac" [width]="300" caption="{{ 'GENERALS.CAJAS.CONTAC' | translate }}"></dxi-column>
+              <dxi-column dataField="total" [width]="100" alignment="left" caption="{{ 'GENERALS.CAJAS.TOTAL' | translate }}"></dxi-column>
+              <dxi-column dataField="codSuper" [width]="100" caption="{{ 'GENERALS.CAJAS.CODSUPER' | translate }}"></dxi-column>
+
+              <dxo-editing mode="popup"
+                           [allowUpdating]="true"
+                           [allowDeleting]="true"
+                           [allowAdding]="true"
+                           [useIcons]="true">
+              </dxo-editing>
+            </dx-data-grid>
+        </div>
+
+        <dx-popup 
+            [showTitle]="true"
+            title="{{ 'GENERALS.CAJAS.TITLE' | translate }}"
+            [dragEnabled]="false"
+            [closeOnOutsideClick]="true"
+            [(visible)]="popupVisible">
+            <cajas-form #form [model]="currentModel" (formSubmitted)="formSubmittedHandler($event)" ></cajas-form>
+        </dx-popup>
+    </div>
+</div>

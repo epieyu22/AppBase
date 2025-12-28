@@ -1,0 +1,216 @@
+{
+  "SETTINGS": {
+    "POSITIONS": {
+      "TITLE": "Cargos",
+      "CODE": "Código",
+      "NAME": "Nombre",
+      "AVAILABLE_SALARY": "Salario disponible",
+      "HAS_BOSS": "Cargo jefe",
+      "PROFILE": "Perfil",
+      "FUNCTION": "Funciones",
+      "OBJECTIVE": "Objetivo",
+      "BASIC_INFO": "Datos básicos",
+      "SALARY_INFO": "Información salarial",
+      "ALTERNATIVE_CODE": "Cod. Alternativo",
+      "DESCRIPTION": "Descripcion",
+      "BOSS_CODE": "Cod. Cargo Jefe",
+      "AUTHORIZE_SALARY": "Autoriza aumento salarial",
+      "RECEIVE_MAILS": "Recibe e-mails",
+      "ARTICLE_209": "Art. 209",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar el cargo @name?"
+    },
+    "WITHDRAWALS": {
+      "TITLE": "Causales de Retiro",
+      "CODE": "Código",
+      "NAME": "Nombre",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la causal de retiro '@name'?"
+    }
+  },
+
+  "GENERALS": {
+    "ZONES": {
+      "TITLE": "Zonas",
+      "CODE": "Código",
+      "NAME": "Nombre",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la zona '@name'?"
+    },
+
+    "COUNTRIES": {
+      "TITLE": "Paises",
+      "CODE": "Código",
+      "NAME": "Nombre",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar el pais '@name'?"
+    },
+
+    "PROFESSIONS": {
+      "TITLE": "Profesiones",
+      "CODE": "Código",
+      "NAME": "Nombre",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la profesion '@name'?"
+    },
+
+    "COMPANIES": {
+      "TITLE": "Compañias",
+      "CODE": "Código",
+      "NAME": "Nombre",
+      "TYPEDOC": "Tipo Documento",
+      "NUMDOC": "Documento",
+      "DVER": "Dv",
+      "ADDRESS": "Direccion",
+      "CODDEP": "Departamento",
+      "CODCITY": "Ciudad",
+      "TEL": "Telefono",
+      "FAX": "Fax",
+      "CODARL": "Administradora Riesgos",
+      "CODSUBSIPAG": "Sucursal Pagadora",
+      "CLASSCONTRIB": "Aportante",
+      "FORMPRESENTS": "Forma Presentacion",
+      "FECINSTALL": "Fecha Instalacion",
+      "FECULTACCESS": "Fecha Acceso",
+      "DAISVALIDITY": "Dias Licencia",
+      "FECEXPIREDLIC": "Fecha Expira Licencia",
+      "CLAVE": "Serial Maquina",
+      "CODHABILITA": "Codigo Habilita",
+      "CODCOUNTRY": "Pais",
+      "NUMLICENCES": "No. Licencias",
+      "SERVER": "Servidor",
+      "DATABASE": "Base Datos",
+      "USER": "Usuario",
+      "PASSW": "Contraseña",
+      "ROUTE": "Ruta",
+      "MODNOM": "Mod Nomina",
+      "MODRH": "Mod RRHH",
+      "MODMIS": "Mod M.I.S",
+      "SERIAL": "Serial",
+      "CODLOCAL": "Cod Local",
+      "STATE": "Estado",
+      "BASIC_INFO": "Datos básicos",
+      "PROFILE": "Informacón general",
+      "CONFIGURATION": "Configuración",
+      "DEPENDENCES": "Dependencias",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la empresa '@name'?"
+    },
+
+    "EPS": {
+      "TITLE": "Eps",
+      "CODE": "Codigo",
+      "NAME": "Nombre",
+      "NUMDOC": "Documento",
+      "DVER": "Dv",
+      "ADDRESS": "Dirección",
+      "TEL": "Teléfono1",
+      "TELDOS": "Telléfono2",
+      "FAX": "Fax",
+      "CONTAC": "Contacto",
+      "TOTAL": "Afiliados",
+      "CODSUPER": "Cod Super",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la eps '@name'?"
+    },
+
+    "DEPARTMENTS": {
+      "TITLE": "Departamentos",
+      "CODE": "Codigo",
+      "CODDANE": "Codigo Dane",
+      "NAME": "Nombre",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar el Departamento '@name'?"
+    },
+
+    "ARL": {
+      "TITLE": "Arl",
+      "CODE": "Codigo",
+      "NAME": "Nombre",
+      "NUMDOC": "Documento",
+      "DVER": "Dv",
+      "ADDRESS": "Dirección",
+      "TEL": "Teléfono1",
+      "TELDOS": "Telléfono2",
+      "FAX": "Fax",
+      "CONTACT": "Contacto",
+      "TOTAL": "Afiliados",
+      "CODSUPER": "Cod Super",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la arl '@name'?"
+    },
+
+    "CITIES": {
+      "TITLE": "Ciudades",
+      "CODE": "Codigo",
+      "CODDEPTO": "Codigo Depto",
+      "CODDANE": "Codigo Dane",
+      "NAME": "Nombre",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la ciudad '@name'?"
+    },
+
+    "SUBSIDIARIES": {
+      "TITLE": "Sucursales",
+      "CODE": "Codigo",
+      "CODZONE": "Codigo Zona",
+      "NAME": "Nombre",
+      "CUMMETA": "Cumplio Meta",
+      "CODCAJA": "Codigo Caja",
+      "CODSSUBSISEC": "Cod. Sucursal Sec.",
+      "HASCOMPANY": "es Empresa",
+      "NUMDOC": "Documento",
+      "DVER": "Dv",
+      "UNIFIED": "Unificado",
+      "CODAGENCY": "Codigo Agencia",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la sucursal '@name'?"
+    },
+
+    "CAJAS": {
+      "TITLE": "Cajas Compensacion",
+      "CODE": "Codigo",
+      "NAME": "Nombre",
+      "NUMDOC": "Documento",
+      "DVER": "Dv",
+      "ADDRESS": "Dirección",
+      "TEL": "Teléfono1",
+      "TELDOS": "Telléfono2",
+      "FAX": "Fax",
+      "CONTAC": "Contacto",
+      "TOTAL": "Afiliados",
+      "CODSUPER": "Cod Super",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar la caja '@name'?"
+    },
+
+    "COSTCENTERS": {
+      "TITLE": "Centros de Costo",
+      "CODE": "Codigo",
+      "NAME": "Nombre",
+      "COSTCENTERSEC": "C. Costos Sec.",
+      "PPTOSAP": "Ppto Sap",
+      "PMP": "Pmp",
+      "PROFITCENTER": "Centro Benef",
+      "SUBSIDIARY": "Sucursal",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar el centro de costos '@name'?"
+    },
+
+    "HOLIDAYS": {
+      "TITLE": "Dias Festivos",
+      "CODE": "Codigo",
+      "DATE": "Fecha Festivo",
+      "NAME": "Descripcion",
+      "CONFIRM_DELETE_MESSAGE": "Esta seguro que desea eliminar el festivo '@name'?"
+    }
+  },
+
+  "MESSAGES": {
+    "DELETE_SUCCESS": "Se elimino el registro con exito!",
+    "DELETE_ERROR": "Ocurrio un error al eliminar el registro.",
+    "SAVED_CHANGES_SUCCESS": "Se guardaron los cambios correctamente.",
+    "SAVED_CHANGES_ERROR": "Ocurrio un error al intentar guardar",
+    "SERVER_ERROR": "Ocurrió un error en el servidor."
+  },
+  
+  "BUTTONS": {
+    "ACCEPT": "Aceptar",
+    "SAVE": "Guardar",
+    "PDF_EXPORT": "Exportar a PDF"
+  },
+  "AUTH": {
+    "INVALID_DATA": "Datos no válidos.",
+    "SESSION_EXPIRED": "Tu sessión ha expirado.",
+    "WELCOME": "Bienvenido / a",
+    "USER_NOT_FOUND": "No se encontró ningún usuario con esas credenciales.",
+    "FORGOT_PASSWORD": "Olvidaste tu contraseña?"
+  }
+}

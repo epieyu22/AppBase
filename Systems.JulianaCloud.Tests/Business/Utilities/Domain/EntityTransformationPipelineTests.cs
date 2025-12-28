@@ -1,8 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Systems.JulianaCloud.Business.Pipelines.Shared;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Systems.JulianaCloud.Business.Utilities.Domain;
 using Systems.JulianaCloud.Domain.Interfaces;
-using Systems.JulianaCloud.Interfaces.Business.Pipelines.Shared;
-using Systems.JulianaCloud.Interfaces.Business.Pipelines.Shared.Pipes;
+using Systems.JulianaCloud.Interfaces.Business.Utilities.Domain;
 
 namespace Systems.JulianaCloud.Tests.Business.Utilities.Domain
 {

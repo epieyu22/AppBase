@@ -12,7 +12,6 @@ using Systems.JulianaCloud.Interfaces.Commons;
 using Systems.JulianaCloud.Interfaces.Data;
 using Systems.JulianaCloud.Resources;
 using Microsoft.Extensions.Configuration;
-using Systems.JulianaCloud.Domain.Novelty;
 
 namespace Systems.JulianaCloud.Data
 {
@@ -101,20 +100,16 @@ namespace Systems.JulianaCloud.Data
                 RegisterRepository<Country>();
                 RegisterRepository<Profession>();
                 RegisterRepository<Company>();
-                RegisterRepository<Health>();
+                RegisterRepository<Eps>();
                 RegisterRepository<Department>();
                 RegisterRepository<City>();
-                RegisterRepository<Risk>();
-                RegisterRepository<BranchOffice>();
-                RegisterRepository<BoxFamilier>();
+                RegisterRepository<Arl>();
+                RegisterRepository<Subsidiary>();
+                RegisterRepository<Caja>();
                 RegisterRepository<CostCenter>();
                 RegisterRepository<Holiday>();
                 RegisterRepository<User>();
                 RegisterRepository<Withdrawal>();
-                RegisterRepository<Utility>();
-                RegisterRepository<Novelty>();
-                RegisterRepository<NoveltyHistoric>();
-                RegisterRepository<Employee>();
             }
         }
 
@@ -173,20 +168,16 @@ namespace Systems.JulianaCloud.Data
             modelBuilder.Entity<Country>().HasKey(p => p.Key);
             modelBuilder.Entity<Profession>().HasKey(p => p.Key);
             modelBuilder.Entity<Company>().HasKey(p => p.Key);
-            modelBuilder.Entity<Health>().HasKey(p => p.Key);
+            modelBuilder.Entity<Eps>().HasKey(p => p.Key);
             modelBuilder.Entity<Department>().HasKey(p => p.Key);
             modelBuilder.Entity<City>().HasKey(p => p.Key);
-            modelBuilder.Entity<Risk>().HasKey(p => p.Key);
-            modelBuilder.Entity<BranchOffice>().HasKey(p => p.Key);
-            modelBuilder.Entity<BoxFamilier>().HasKey(p => p.Key);
+            modelBuilder.Entity<Arl>().HasKey(p => p.Key);
+            modelBuilder.Entity<Subsidiary>().HasKey(p => p.Key);
+            modelBuilder.Entity<Caja>().HasKey(p => p.Key);
             modelBuilder.Entity<CostCenter>().HasKey(p => p.Key);
             modelBuilder.Entity<Holiday>().HasKey(p => p.Key);
             modelBuilder.Entity<Withdrawal>().HasKey(p => p.Key);            
             modelBuilder.Entity<User>().HasKey(p => p.Key);
-            modelBuilder.Entity<Utility>().HasKey(p => p.Key);
-            modelBuilder.Entity<Novelty>().HasKey(p => new { p.Cod_Empleado, p.Cod_Concepto, p.Fec_Novedad });
-            modelBuilder.Entity<NoveltyHistoric>();
-            modelBuilder.Entity<Employee>();
         }
 
         #endregion

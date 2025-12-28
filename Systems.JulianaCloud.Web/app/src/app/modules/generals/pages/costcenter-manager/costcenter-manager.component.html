@@ -1,0 +1,60 @@
+<div class="container-fluid">
+    <div class="card-full">
+        <div class="card-header" style="background-color:rgb(245, 251, 251); border: 0ch;height: 2cm;">
+            <h4 style="font-size: large;color: rgb(146, 141, 141);">{{ 'GENERALS.COSTCENTERS.TITLE' | translate }}</h4>
+            <hr style="border-color: black;">
+        </div>
+
+        <div class="card-body">            
+            <jc-pdf-export-button [grid]="grid"></jc-pdf-export-button>
+            <dx-data-grid #grid
+                (onContentReady)="onContentReady($event)"
+                [dataSource]="costCenterStore"
+                [allowColumnReordering]="true"
+                [allowColumnResizing]="true"
+                [hoverStateEnabled]="true"
+                [showBorders]="true"
+                (onToolbarPreparing)="prepareToolbar($event)"
+              >
+              <dxo-export [enabled]="true"></dxo-export>
+              <dxo-filter-row [visible]="true"></dxo-filter-row>
+              <dxo-header-filter [visible]="true"></dxo-header-filter>
+              <dxo-paging [pageSize]="10"></dxo-paging>
+              <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[10, 25]"></dxo-pager>
+              <dxo-search-panel [visible]="true" [highlightCaseSensitive]="true"></dxo-search-panel>
+              <dxo-group-panel [visible]="true"></dxo-group-panel>
+              <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+
+              <dxi-column type="buttons">
+                <dxi-button name="edit" icon="las la-edit" [onClick]='loadItem.bind(this)'>
+                </dxi-button>
+                <dxi-button name="delete" icon="las la-trash" [onClick]='deleteEntry.bind(this)'></dxi-button>
+              </dxi-column>
+
+              <dxi-column dataField="key" [width]="90" alignment="left" caption="{{ 'GENERALS.COSTCENTERS.CODE' | translate }}"></dxi-column>
+              <dxi-column dataField="name" [width]="300" caption="{{ 'GENERALS.COSTCENTERS.NAME' | translate }}"></dxi-column>
+              <dxi-column dataField="costCenterSec" [width]="150" caption="{{ 'GENERALS.COSTCENTERS.COSTCENTERSEC' | translate }}"></dxi-column>
+              <dxi-column dataField="pPtoSap" [width]="120" caption="{{ 'GENERALS.COSTCENTERS.PPTOSAP' | translate }}"></dxi-column>
+              <dxi-column dataField="pmp" [width]="100" caption="{{ 'GENERALS.COSTCENTERS.PMP' | translate }}"></dxi-column>
+              <dxi-column dataField="profitCenter" [width]="130" caption="{{ 'GENERALS.COSTCENTERS.PROFITCENTER' | translate }}"></dxi-column>
+              <dxi-column dataField="subsidiary" [width]="90" caption="{{ 'GENERALS.COSTCENTERS.SUBSIDIARY' | translate }}"></dxi-column>
+
+              <dxo-editing mode="popup"
+                           [allowUpdating]="true"
+                           [allowDeleting]="true" 
+                           [allowAdding]="true"
+                           [useIcons]="true">
+              </dxo-editing>
+            </dx-data-grid>
+        </div>
+
+        <dx-popup 
+            [showTitle]="true"
+            title="{{ 'GENERALS.COSTCENTERS.TITLE' | translate }}"
+            [dragEnabled]="false"
+            [closeOnOutsideClick]="true"
+            [(visible)]="popupVisible">
+            <costcenters-form #form [model]="currentModel" (formSubmitted)="formSubmittedHandler($event)" ></costcenters-form>
+        </dx-popup>
+    </div>
+</div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m4fnM7QAO6FyYJ713wuju+2+WLCgR8UGmzj+ufamIaJ4YmQCvqa8EJpORHfSFkRx7MfSv28E4bobCc8DvCO01A==",
+  "dgSpecHash": "g3m0MSfwC+GXsBdb8rZhefqfPFQktcIPV6JoT1mS2JhL1x8h3KfWnNeHwUApk43PsgBJ/jrZ/KWYYMXfv8bXzg==",
   "success": true,
-  "projectFilePath": "C:\\ProyectosWork\\julianacloud\\Systems.JulianaCloud.Commons\\Systems.JulianaCloud.Commons.csproj",
+  "projectFilePath": "C:\\julianacloud\\Systems.JulianaCloud.Commons\\Systems.JulianaCloud.Commons.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Carlos Epieyu\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",

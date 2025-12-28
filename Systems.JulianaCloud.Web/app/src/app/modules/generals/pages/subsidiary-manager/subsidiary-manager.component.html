@@ -1,0 +1,74 @@
+<div class="container-fluid">
+    <br>
+    <div class="card-full">
+        <div class="card-header" style="background-color:rgb(245, 251, 251); border: 0ch;height: 2cm;">
+            <h4 style="font-size: large;color: rgb(146, 141, 141);">{{ 'GENERALS.SUBSIDIARIES.TITLE' | translate }}</h4>
+            <hr style="border-color: black;">
+        </div>
+
+        <div class="card-body">    
+            <jc-pdf-export-button [grid]="grid"></jc-pdf-export-button>
+            <dx-data-grid #grid
+                (onContentReady)="onContentReady($event)"
+                [dataSource]="subsidiaryStore"
+                [allowColumnReordering]="true"
+                [allowColumnResizing]="true"
+                [hoverStateEnabled]="true"
+                [showBorders]="true"
+                (onToolbarPreparing)="prepareToolbar($event)"
+              >
+              <dxo-export [enabled]="true"></dxo-export>
+              <dxo-filter-row [visible]="true"></dxo-filter-row>
+              <dxo-header-filter [visible]="true"></dxo-header-filter>
+              <dxo-paging [pageSize]="10"></dxo-paging>
+              <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[10, 25]"></dxo-pager>
+              <dxo-search-panel [visible]="true" [highlightCaseSensitive]="true"></dxo-search-panel>
+              <dxo-group-panel [visible]="true"></dxo-group-panel>
+              <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+
+
+                <dxi-column type="buttons">
+                    <dxi-button name="edit" icon="las la-edit"  [onClick]='loadItem.bind(this)'>
+                    </dxi-button>
+                    <dxi-button name="delete" icon="las la-trash" [onClick]='deleteEntry.bind(this)'></dxi-button>
+                </dxi-column>
+
+
+                <dxi-column dataField="key" [width]="90" alignment="left" caption="{{ 'GENERALS.SUBSIDIARIES.CODE' | translate }}"></dxi-column>
+                <dxi-column dataField="zone.name" [width]="130" alignment="left" caption="{{ 'GENERALS.SUBSIDIARIES.CODZONE' | translate }}"></dxi-column>
+                <dxi-column dataField="name" [width]="300" caption="{{ 'GENERALS.SUBSIDIARIES.NAME' | translate }}" ></dxi-column>
+                <dxi-column dataField="cumMeta" [width]="150" caption="{{ 'GENERALS.SUBSIDIARIES.CUMMETA' | translate }}" ></dxi-column>
+                <dxi-column dataField="caja.name" [width]="150" alignment="left" caption="{{ 'GENERALS.SUBSIDIARIES.CODCAJA' | translate }}" ></dxi-column>
+                <dxi-column dataField="conamedSubsiSec" [width]="150" caption="{{ 'GENERALS.SUBSIDIARIES.CODSSUBSISEC' | translate }}" ></dxi-column>
+                <dxi-column dataField="hasCompany" [width]="150" caption="{{ 'GENERALS.SUBSIDIARIES.HASCOMPANY' | translate }}" ></dxi-column>
+                <dxi-column dataField="numDoc" [width]="120" alignment="left" caption="{{ 'GENERALS.SUBSIDIARIES.NUMDOC' | translate }}" ></dxi-column>
+                <dxi-column dataField="dVer" [width]="70" alignment="left" caption="{{ 'GENERALS.SUBSIDIARIES.DVER' | translate }}" ></dxi-column>
+                <dxi-column dataField="unified" [width]="120" caption="{{ 'GENERALS.SUBSIDIARIES.UNIFIED' | translate }}" ></dxi-column>
+                <dxi-column dataField="codAgency" [width]="150" alignment="left" caption="{{ 'GENERALS.SUBSIDIARIES.CODAGENCY' | translate }}" ></dxi-column>
+
+                <dxo-editing 
+                    mode="popup"
+                    [allowUpdating]="true"
+                    [allowDeleting]="true"
+                    [allowAdding]="true"
+                    [useIcons]="true">
+
+                </dxo-editing>
+
+            </dx-data-grid>
+        </div>
+
+
+        <dx-popup 
+            [showTitle]="true"
+            title="{{ 'GENERALS.SUBSIDIARIES.TITLE' | translate }}"
+            [dragEnabled]="false"
+            [closeOnOutsideClick]="true"
+            [(visible)]="popupVisible">
+            <subsidiaries-form #form [model]="currentModel" (formSubmitted)="formSubmittedHandler($event)" ></subsidiaries-form>
+        </dx-popup>
+        
+    </div>
+
+
+</div>

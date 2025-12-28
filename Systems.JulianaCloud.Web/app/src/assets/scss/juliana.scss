@@ -1,0 +1,97 @@
+@import "~devextreme/dist/css/dx.common.css";
+@import "~devextreme/dist/css/dx.light.css";
+@import "~fullcalendar/dist/fullcalendar.min.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "../vendor/nucleo/css/nucleo.css";
+@import "~ngx-bootstrap/datepicker/bs-datepicker.css";
+@import "~@swimlane/ngx-datatable/index.css";
+@import "~@swimlane/ngx-datatable/assets/icons.css";
+@import "~@swimlane/ngx-datatable/themes/bootstrap.css";
+
+$white: #f2f4f6;
+$teal-green: #1ee3cf;
+$sea-blue: #6b48ff;
+$dark-blue: #0d3f67;
+$light-blue: #1e91f3;
+$dark-light-blue: #1345a0;
+
+$primary: $light-blue;
+$success: $teal-green;
+
+@import "argon";
+
+.form-control{
+    background-color: transparent;
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-third {
+    background-color: $dark-light-blue;
+}
+
+.btn-circle {
+    border-radius: 50%;
+}
+
+.btn-square-size-sm {
+    width: 12px;
+    height: 12px;
+}
+
+.btn-square-size-md {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-square-size-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.medium-icon {
+    font-size: 24px;
+}
+
+.last-tab-icon .nav-item:last-child{
+    flex: none;
+}
+
+.scrollable .dx-popup-content {
+    overflow-y: scroll;
+}
+
+.select-form .ng-select-container {
+    height: 46px !important;
+    border-color: $primary;
+}
+
+.sidenav.navbar-dark.bg-dark {
+
+    .navbar-nav > .nav-item {
+        margin-top: 2px;
+    
+        > .nav-link {
+          &.active {
+            background: $primary !important;
+          }
+        }
+      }
+    
+    .navbar-nav .nav-link[data-toggle="collapse"] {
+        &:after {
+          font-family: "Line Awesome Free" !important;
+          content: "\f105";
+        }
+    }
+}
+
+.ng-valid  {
+    @extend .is-valid
+  }
+  
+  .ng-invalid:not(form)  {
+    @extend .is-invalid
+  }
