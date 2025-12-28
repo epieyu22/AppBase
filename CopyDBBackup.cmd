@@ -1,0 +1,1 @@
+docker cp %1.bak sql-server-db:/var/opt/mssql/data

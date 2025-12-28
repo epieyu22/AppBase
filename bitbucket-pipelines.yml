@@ -1,0 +1,19 @@
+
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: ummarbhutta/dotnetnode:sdk-3.1
+pipelines:
+  branches:
+    '{master,develop}':
+      - step:
+          caches:
+            - dotnetcore
+          script: 
+            - export SOLUTION_NAME=Systems.JulianaCloud   
+            - export CONFIGURATION=Release
+            - export WEB_PROJECT_NAME=Systems.JulianaCloud.Web
+            - dotnet restore $SOLUTION_NAME.sln
+            - dotnet build --no-restore $SOLUTION_NAME.sln --configuration $CONFIGURATION
+            - dotnet test --no-build $SOLUTION_NAME.sln
+#            - dotnet publish --configuration $CONFIGURATION --no-build ./Systems.JulianaCloud.Web/${WEB_PROJECT_NAME}.csproj -o ./publish
+#          artifacts: 
+#            - ./publish/**

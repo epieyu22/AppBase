@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Systems.JulianaCloud.Business\Systems.JulianaCloud.Business.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.Domain\Systems.JulianaCloud.Domain.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.Interfaces\Systems.JulianaCloud.Interfaces.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.Resources\Systems.JulianaCloud.Resources.csproj" />
+    <ProjectReference Include="..\Systems.JulianaCloud.TransferObjects\Systems.JulianaCloud.TransferObjects.csproj" />
+  </ItemGroup>
+
+</Project>
