@@ -1,0 +1,12 @@
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.deps.json
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.dll
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.pdb
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.Messages.resources
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.csproj.GenerateResource.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.AssemblyInfoInputs.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.AssemblyInfo.cs
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.csproj.CoreCompileInputs.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.sourcelink.json
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.dll
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.Resources\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.pdb

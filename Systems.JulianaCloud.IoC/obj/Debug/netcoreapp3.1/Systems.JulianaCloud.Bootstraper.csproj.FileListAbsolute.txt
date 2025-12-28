@@ -1,0 +1,6 @@
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.IoC\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Bootstraper.csproj.AssemblyReference.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.IoC\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Bootstraper.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.IoC\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Bootstraper.AssemblyInfoInputs.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.IoC\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Bootstraper.AssemblyInfo.cs
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.IoC\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Bootstraper.csproj.CoreCompileInputs.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.IoC\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.Bootstraper.sourcelink.json

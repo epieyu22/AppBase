@@ -1,0 +1,16 @@
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.deps.json
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.dll
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.pdb
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.Domain.dll
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.dll
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.Domain.pdb
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\bin\Debug\netcoreapp3.1\Systems.JulianaCloud.Resources.pdb
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.csproj.AssemblyReference.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.AssemblyInfoInputs.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.AssemblyInfo.cs
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.csproj.CoreCompileInputs.cache
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.sourcelink.json
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems..EB98754A.Up2Date
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.dll
+C:\ProyectosWork\julianacloud\Systems.JulianaCloud.TransferObjects\obj\Debug\netcoreapp3.1\Systems.JulianaCloud.TransferObjects.pdb

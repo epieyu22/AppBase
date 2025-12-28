@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Systems.JulianaCloud.TransferObjects/1.0.0": {
+        "dependencies": {
+          "Systems.JulianaCloud.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Systems.JulianaCloud.TransferObjects.dll": {}
+        }
+      },
+      "Systems.JulianaCloud.Domain/1.0.0": {
+        "dependencies": {
+          "Systems.JulianaCloud.Resources": "1.0.0"
+        },
+        "runtime": {
+          "Systems.JulianaCloud.Domain.dll": {}
+        }
+      },
+      "Systems.JulianaCloud.Resources/1.0.0": {
+        "runtime": {
+          "Systems.JulianaCloud.Resources.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Systems.JulianaCloud.TransferObjects/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Systems.JulianaCloud.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Systems.JulianaCloud.Resources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

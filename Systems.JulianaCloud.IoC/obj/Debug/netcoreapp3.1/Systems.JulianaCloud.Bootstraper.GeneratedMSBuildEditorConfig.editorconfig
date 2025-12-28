@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = Systems.JulianaCloud.Bootstraper
+build_property.ProjectDir = C:\ProyectosWork\julianacloud\Systems.JulianaCloud.IoC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
