@@ -1,19 +1,13 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Reflection;
 using Systems.JulianaCloud.Api;
 using Systems.JulianaCloud.Bootstraper;
-using Systems.JulianaCloud.Data;
-using Systems.JulianaCloud.Interfaces.Data;
 
 namespace Systems.JulianaCloud.Web
 {
@@ -34,11 +28,6 @@ namespace Systems.JulianaCloud.Web
             services.AddControllersWithViews()
                 .AddApplicationPart(typeof(PositionController).Assembly);
             services.AddHttpContextAccessor();
-            // In production, the Angular files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "app/dist";
-            });
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
@@ -80,10 +69,6 @@ namespace Systems.JulianaCloud.Web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            if (!env.IsDevelopment())
-            {
-                app.UseSpaStaticFiles();
-            }
 
             app.UseRouting();
             app.UseAuthentication();
@@ -95,20 +80,22 @@ namespace Systems.JulianaCloud.Web
                     pattern: "{controller}/{action=Index}/{id?}");
             });
 
-            app.UseSpa(spa =>
+            // SPA Configuration for .NET 8
+            if (env.IsDevelopment())
             {
-                // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                // see https://go.microsoft.com/fwlink/?linkid=864501
-
-                spa.Options.SourcePath = "app";
-
-                if (env.IsDevelopment())
+                // In development, proxy to Angular dev server
+                app.UseSpa(spa =>
                 {
-
+                    spa.Options.SourcePath = "app";
                     spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
-                    //spa.UseAngularCliServer(npmScript: "start");
-                }
-            });
+                });
+            }
+            else
+            {
+                // In production, serve static files from dist folder
+                app.UseDefaultFiles();
+                app.MapFallbackToFile("index.html");
+            }
 
             IocConfig.ConfigureEntityTransformationPipeline(app.ApplicationServices);
         }
